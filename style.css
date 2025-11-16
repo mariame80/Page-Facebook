@@ -1,0 +1,427 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+
+
+.signup-box h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #1c1e21;
+  margin-bottom: 5px;
+}
+
+.signup-box p {
+  text-align: center;
+  color: #606770;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 10px 0 20px;
+}
+
+
+
+.name-fields,
+.imail {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.name-fields input,
+.imail input {
+  width:100%;
+  height: 3.75vh;
+  padding: 3px;
+  border: 1px solid #ccd0d5;
+  background: #f5f6f7;
+  border-radius: 8px;
+  font-size: 14px;
+  
+}
+
+.birthday,
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 15px;
+}
+
+.birthday select {
+  width: 32%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccd0d5;
+  background: #f5f6f7;
+}
+
+
+.gender label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f5f6f7;
+  padding: 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 8px;
+  width: 32%;
+  font-size: 14px;
+}
+
+
+.small-text {
+  font-size: 12px;
+  color: #606770;
+  margin-bottom: 15px;
+}
+
+.small-text a {
+  color: #1877f2;
+    text-decoration: none;
+}
+.small-text a:hover{
+  color: #1877f2;
+  text-decoration: underline;
+}
+
+
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.signup-btn:hover {
+  background: #36a420;
+}
+.singnupform{
+  width: 200px;
+  padding: 300px;
+  
+
+}
+
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .name-fields,
+  .imail {
+    flex-direction: column;
+  }
+
+  .birthday select,
+  .gender label {
+    width: 100%;
+  }
+
+  .birthday,
+  .gender {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .signup-box h2 {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .name-fields,
+  .imail {
+    flex-direction: column;
+  }
+
+  .birthday select,
+  .gender label {
+    width: 100%;
+  }
+
+  .birthday,
+  .gender {
+    flex-direction: column;
+    gap: 10px;
+  } 
+  .gender{
+    width: 50%;
+  }
+  
+  .signup-box h2 {
+    font-size: 22px;
+  }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 650px;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.signup-box {
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.signup-box h2 {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.signup-box p {
+  color: #606770;
+  margin-bottom: 15px;
+  font-size: 14px;
+
+
+}
+
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.imail input{
+  width: 96.3%;
+
+
+}
+
+.name-fields input {
+  width: 50%;
+}
+
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #090a0b;
+  
+}
+
+
+label {
+  font-size: 13px;
+  color: #606770;
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Date de naissance */
+/*.birthday {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.gender label {
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  padding: 8px;
+  flex: 1;
+  margin: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gender input {
+  margin-right: 5px;
+}
+
+
+.small-text {
+  font-size: 11px;
+  color: #777;
+  margin-top: 10px;
+}
+
+
+.signup-btn {
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #36a420;
+}
+
+
+
+.small-text a {
+  color: #1877f2;
+}
+
+a{
+text-decoration: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 50px;
+  }
+
+
+  .container{
+    flex-direction: column;
+
+  }
+  .signup-box {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .gender {
+    flex-direction: column;
+  }
+}
+
+
+ @media(max-width: 425px) {
+  .signup-box{
+  flex-direction: column;
+  
+  }
+  .signup-box{
+    width: 90%;
+
+  }
+ }/*
